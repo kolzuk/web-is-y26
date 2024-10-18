@@ -44,15 +44,12 @@ nav a.active {
 main {
     flex: 1;
     background-color: #343434;
+    color: white;
+    padding: 100px 200px;
 }
 
-.post {
-    margin-top: 100px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 100px;
+article {
     padding: 20px;
     background-color: #28282C;
-    color: white;
     overflow: hidden;
 }
