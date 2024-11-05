@@ -4,52 +4,137 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Montserrat, sans-serif;
+.body {
     font-size: 20px;
+    line-height: 1.1;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    background-color: #343434;
+    word-spacing: normal;
+    letter-spacing: normal;
+    text-transform: initial;
+    color: white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
 }
 
-header,
-footer {
+.header, .footer {
     background-color: black;
     padding: 10px;
+    position: relative;
 }
 
-nav {
+.nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: right;
     align-items: center;
     height: 50px;
 }
 
-nav a {
+.nav__item {
     margin-left: 20px;
     margin-right: 20px;
     text-decoration: none;
     color: white;
 }
 
-nav a:first-child {
-    margin-right: auto;
+.nav__item:hover {
+    background-color: rgb(133, 133, 133);
 }
 
-nav a.active {
+.nav__item_logo {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+}
+
+.nav__item_active {
     border-bottom: 3px solid white;
 }
 
-main {
+.main {
     flex: 1;
-    background-color: #343434;
     color: white;
-    padding: 100px 200px;
+    padding: 100px 100px;
 }
 
-article {
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.article {
     padding: 20px;
     background-color: #28282C;
     overflow: hidden;
+}
+
+.article__name {
+    font-weight: bold;
+}
+
+.article__date {
+    font-style: italic;
+    font-size: 15px;
+}
+
+.article__content {
+    margin-top: 10px;
+    word-break: break-word;
+}
+
+.article__code {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(90, 90, 87, 0.4);
+}
+
+.about-me {
+    background-color: #28282C;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+
+.about-me__img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20%;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: none;
+    }
+}
+
+.article__table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #555;
+}
+
+thead {
+    background-color: #444;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(64, 69, 69, 0.27);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #343434;
 }

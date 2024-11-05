@@ -4,39 +4,51 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/outlines.css">
+    <script src="js/script.js" defer></script>
 </head>
-<body>
-<header>
-    <nav>
-        <a class="nav-list-item" href="index.html">Айтал Багардынов</a>
-        <a class="nav-list-item" href="index.html">Блог</a>
-        <a class="nav-list-item active" href="about_me.html">Обо мне</a>
-        <a class="nav-list-item" href="contacts.html">Контакты</a>
+<body class="body">
+<header class="header">
+    <nav class="nav">
+        <a class="nav__item nav__item_logo" href="index.html">Айтал Багардынов</a>
+        <a class="nav__item" href="index.html">Блог</a>
+        <a class="nav__item nav__item_active" href="about_me.html">Обо мне</a>
     </nav>
 </header>
-<main>
-    Всем привет. Меня зовут <strong>Айтал Багардынов</strong>, также известный как <b>@kolzuk</b>. ЙОУ.
-    Хочу вам показать свою любимую цитату:
-    <blockquote>
-        <p style="white-space: preserve">
-        Голый мужик ест Киндер Буэно
-        На пляже в Сочи волна по колено
-        Голый мужик ест Киндер Буэно
-        Рухнет кометой капелька с члена
-        Голый мужик ест Киндер Буэно
-        Брезгливо ребёнка утащит мурена
-        Голый мужик ест Киндер Буэно
-        Я мимо прошёл, мне совсем нету дела
-        Что за трагедия стоит за этим
-        Голый мужик ест Киндер Буэно
-        И что за счастье стояло за этим
-        Голый мужик ест Киндер Буэно</p>
-        <cite>Валентин Дядька</cite>
-    </blockquote>
+<main class="main">
+    <div class="about-me">
+        <img class="about-me__img" src="images/me.jpg" alt="literallyme">
+        <section style="margin-right: 25%">
+            <h1>Про меня</h1>
+            <span>Всем привет. Меня зовут <strong>Айтал Багардынов</strong>,
+                на данный момент обучаюсь на третьем курсе факультета информационные системы и технологии в ИТМО.
+                На данный момент мне 20 лет.
+                Сам родом из Якутска.
+            </span>
+        </section>
+        <section>
+            <h1>Мои достижения</h1>
+            <ul style="margin-left: 20px">
+                <li><b>ICPC Northern Eurasia Finals:</b> 86 место из 278 команд</li>
+                <li><b>Techarena from Huawei:</b> призёр</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Мой опыт</h1>
+            <ul style="margin-left: 20px">
+                <li><h3>Яндекс, Яндекс-книги</h3>
+                    Работал стажёром разработчиком в Яндексе. Писал на языке Kotlin.</li>
+            </ul>
+            </section>
+        <blockquote style="border-left: 4px solid #ccc">
+        <pre>
+ Если хочешь победить весь мир, победи себя</pre>
+            <cite style="font-style: italic">— Федор Достоевский</cite>
+        </blockquote>
+    </div>
 </main>
-<footer>
-    <nav>
-        <a class="nav-list-item" href="index.html">Айтал Багардынов</a>
+<footer class="footer">
+    <nav class="nav">
+        <a class="nav__item nav__item_logo" href="index.html">Айтал Багардынов</a>
     </nav>
 </footer>
 </body>
