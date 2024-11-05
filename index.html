@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/outlines.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
+    <script src="js/fetch_post.js" defer></script>
 </head>
 
 <body class="body">
@@ -13,10 +15,14 @@
         <a class="nav__item nav__item_logo" href="index.html">Айтал Багардынов</a>
         <a class="nav__item nav__item_active" href="index.html">Блог</a>
         <a class="nav__item" href="about_me.html">Обо мне</a>
+        <a class="nav__item" href="ideas.html">Идеи</a>
+        <a class="nav__item" href="gallery.html">Галерея</a>
     </nav>
 </header>
 <main class="main">
-    <div class="articles">
+    <div id="preloader" class="preloader">Загрузка...</div>
+    <div id="error-message" class="error-message"></div>
+    <div class="articles" id="articles">
         <article class="article">
             <div class="article__name">Мой прекрасный кусочек кода</div>
             <div class="article__date">05.11.24</div>

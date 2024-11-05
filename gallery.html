@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+</head>
+<body class="body">
+<header class="header">
+    <nav class="nav">
+        <a class="nav__item nav__item_logo" href="index.html">Айтал Багардынов</a>
+        <a class="nav__item" href="index.html">Блог</a>
+        <a class="nav__item" href="about_me.html">Обо мне</a>
+        <a class="nav__item" href="ideas.html">Идеи</a>
+        <a class="nav__item nav__item_active" href="gallery.html">Галерея</a>
+    </nav>
+</header>
+<main class="main">
+    <div class="gallery">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/gallery/img.png" alt="Slide1"></div>
+                <div class="swiper-slide"><img src="images/gallery/img_1.png" alt="Slide1"></div>
+                <div class="swiper-slide"><img src="images/gallery/img_2.png" alt="Slide1"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script>
+            const swiper = new Swiper('.swiper-container', {
+                loop: true,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </div>
+</main>
+<footer class="footer">
+    <nav class="nav">
+        <a class="nav__item nav__item_logo" href="index.html">Айтал Багардынов</a>
+    </nav>
+</footer>
+</body>
+</html>
